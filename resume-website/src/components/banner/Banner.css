@@ -1,0 +1,31 @@
+.banner-pre-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #C59EEF;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 1.5rem;
+    color: #828282;
+}
+
+.banner-button {
+    width: fit-content;
+}
+
+.banner-media img {
+    position: unset !important;
+    width: 100% !important;
+    height: auto !important;
+}

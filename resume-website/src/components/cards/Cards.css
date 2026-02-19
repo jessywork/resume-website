@@ -1,0 +1,17 @@
+.card-content {
+    background-color: #F2EBF9;
+}
+
+.card-content:first-child {
+    background-color: #E3C9FF;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-content:last-child {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.card-media {
+    position: unset !important;
+    width: 7.188rem !important;
+}
