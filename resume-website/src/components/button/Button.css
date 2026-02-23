@@ -1,0 +1,28 @@
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    font-weight:500;
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #C59EEF;
+    color: #F5F5F5;
+    border: 1px solid #C59EEF;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #C59EEF;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #C59EEF;
+    color: #C59EEF;
+}
+
+.btn-secondary:hover {
+    background-color: #C59EEF;
+    color: #F5F5F5;
+}

@@ -1,0 +1,35 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 7.5rem;
+    position: fixed;
+    width: 100%;
+}
+
+.navigation-single-item {
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navigation-multiple-items {
+    display: flex;
+    gap: 3rem;
+}
+
+.navigation-item {
+    font-size: 1.125rem;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+
+.navigation-item:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    background-color: #25282B;
+}
