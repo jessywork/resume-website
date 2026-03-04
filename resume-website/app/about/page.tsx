@@ -1,5 +1,6 @@
 import Banner from "@/src/components/banner/Banner";
 import Cards from "@/src/components/cards/Cards";
+import Skills from "@/src/components/skills";
 import { ButtonVariant } from "@/src/types/components/button";
 import { MediaVariants } from "@/src/types/components/media";
 
@@ -24,6 +25,7 @@ export default function About() {
     <div className="p-30">
       <Banner {...bannerData} classNameContainer="items-start" classNameText="w-[55%]" classNameImage="w-[45%]" />
       <Cards />
+      <Skills />
     </div>
   );
 }

@@ -3,6 +3,7 @@
     font-size: 1.125rem;
     font-weight:500;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .btn-primary {
