@@ -1,0 +1,17 @@
+.title-header {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.title-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 6.5rem;
+    height: 0.25rem;
+    background-color: #C59EEF;
+    left: 50%;
+    transform: translateX(-50%);
+}
