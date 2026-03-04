@@ -5,7 +5,7 @@ import LinkedIn from "@/src/icons/LinkedIn";
 import Mail from "@/src/icons/Mail";
 
 //todo: add funny action to instagram 
-const footerItems = [
+export const footerItems = [
     { 
         id: 'instagram', 
         icon: <Instagram />, 

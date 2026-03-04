@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { ButtonType } from './button';
 import { MediaType } from './media';
 
 export enum ButtonVariant {
@@ -12,7 +11,7 @@ export type BannerType = {
   preTitle?: string;
   title?: string;
   description?: string;
-  cta?: ButtonType;
+  children?: ReactNode;
   media?: MediaType;
   classNameContainer?: string;
   classNameText?: string;
