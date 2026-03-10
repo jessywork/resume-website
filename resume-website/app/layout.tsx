@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Comfortaa } from "next/font/google";
-import "./globals.css";
+import { Hanken_Grotesk } from "next/font/google";
+import "../src/styles/globals.css";
 import Navigation from "@/src/components/navigation";
 import Footer from "@/src/components/footer";
 
-const comfortaa = Comfortaa({
+const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${comfortaa.className} antialiased`}
+        className={`${hankenGrotesk.className} antialiased`}
       >
         <Navigation />
         <main>{children}</main>

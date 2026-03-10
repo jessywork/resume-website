@@ -1,39 +1,38 @@
 import { FC } from "react";
-import './Footer.css'
-import Instagram from "@/src/icons/Instagram";
-import LinkedIn from "@/src/icons/LinkedIn";
-import Mail from "@/src/icons/Mail";
 
 //todo: add funny action to instagram 
 export const footerItems = [
     { 
         id: 'instagram', 
-        icon: <Instagram />, 
+        name: 'Instagram', 
         url: 'https://www.youtube.com/watch?v=3BFTio5296w&list=RD3BFTio5296w&start_radio=1' 
     },
     { 
         id: 'linkedin', 
-        icon: <LinkedIn />, 
+        name: 'LinkedIn', 
         url: 'https://www.linkedin.com/in/j%C3%A9ssica-carvalho-577823230/' 
     },
     { 
         id: 'mail', 
-        icon: <Mail /> ,
+        name: 'Email',
         url: 'mailto:jessysofia.work@gmail.com'
     },
 ];
 
 const Footer: FC = () => {
     return (
-        <div className="footer-container">
-            <div className="footer-links">
+        <div className="flex flex-col items-center justify-center gap-16 px-64 py-120">
+            <span className="text-3xl leading-10 font-bold text-primary">
+                Jéssica Carvalho
+            </span>
+            <div className="flex items-center gap-16 text-[12px] leading-12px text-tertiary">
                 {footerItems.map((item) => (
-                    <a className="footer-link" href={item.url} target="_blank" key={`footer-link-${item.id}`}>{item.icon}</a>
+                    <a className="" href={item.url} target="_blank" key={`footer-link-${item.id}`}>{item.name}</a>
                 ))}
             </div>
-            <div className="footer-text">
-                Jéssica Carvalho 2026
-            </div>
+            <span className="text-[12px] leading-12px text-tertiary">
+                © 2026 Jéssica Carvalho. All rights reserved.
+            </span>
         </div>
     )
 };

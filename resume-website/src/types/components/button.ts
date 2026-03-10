@@ -9,5 +9,5 @@ export enum ButtonVariant {
 export type ButtonType = {
   variant?: ButtonVariant;
   children?: ReactNode;
-  className?: string;
+  onClick?: () => void;
 };

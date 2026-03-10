@@ -1,0 +1,73 @@
+@theme {
+  /* Backgrounds */
+  --bg-primary: #714AAA;
+  --bg-primary-hover: #5B378F;
+
+
+  /* Borders */
+  --border-primary: #141D23;
+
+  /* Text */
+  --txt-primary: #141D23;
+  --txt-secondary: #714AAA;
+  --txt-tertiary: #5C5F60;
+  --txt-white: #FFFFFF;
+
+
+  /* Icons */
+  --icon-primary: #00000b;
+  --icon-primary-inverse: #faf8f4;
+  --icon-secondary: #949494;
+  --icon-tertiary: #6f6f6f;
+  --icon-disable: #b9b9b9;
+  --icon-accent: #ee3c18;
+  --icon-accent-link: #be3013;
+  --icon-accent-link-visited: #8f240e;
+  --icon-accent-link-visited-hover: #5f180a;
+  --icon-accent-inverse: #86b0ff;
+  --icon-accent-inverse-visited: #6b8dcc;
+  --icon-accent-inverse-visited-hover: #506a99;
+
+  --icon-error: #fbd0d0;
+  --icon-error-2: #e91616;
+  --icon-success: #d8f3ea;
+  --icon-success-2: #237659;
+  --icon-warning: #fceecf;
+  --icon-warning-2: #f0aa0f;
+  --icon-info: #dbe2f0;
+  --icon-info-2: #4c6db3;
+  --icon-focus: #00000b;
+
+  /* Link */
+  --link-default: #be3013;
+  --link-hover: #be3013;
+  --link-visited: #8f240e;
+  --link-visited-hover: #5f180a;
+  --link-inverse: #86b0ff;
+  --link-inverse-hover: #86b0ff;
+  --link-inverse-visited: #6b8dcc;
+  --link-inverse-visited-hover: #506a99;
+}
+
+.dark {
+}
+
+@utility bg-* {
+  background-color: --value(--bg-*);
+}
+
+@utility border-* {
+  border-color: --value(--border-*);
+}
+
+@utility text-* {
+  color: --value(--txt-*);
+}
+
+@utility icon-* {
+  color: --value(--icon-*);
+}
+
+@utility link-* {
+  color: --value(--link-*);
+}
